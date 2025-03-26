@@ -1,16 +1,17 @@
-# devmobile
+<h1 align="center">Hola 👋, Soy Ivan Narvaez</h1>
+<h3 align="center">Un apasionado por la tecnologia, tengo experiencia en el area de IT, DevOps, Seguridad Informatica y Redes. En este repositorio encontraras informacion relevante sobre todas las tecnologias con las que he trabajado a lo largo de mi carrera profesional.</h3>
 
-A new Flutter project.
+- 🔭 Actualmente me desempeño como CEO en: [ITCloud S.A.S](https://itcloud.com.co)
 
-## Getting Started
+## Proyecto Flutter Unitecnar
 
-This project is a starting point for a Flutter application.
+En este repositorio encontraras el contenido de la asignatura desarrollo movil impartida en la universidad Unitecnar.
 
-A few resources to get you started if this is your first Flutter project:
+### Tematicas
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Clases en DART.
+- Uso de widgets comunes en Flutter.
+- Formularios y validacion de campos.
+- Rutas usando Material Route y go_router.
+- Manejo de estados (Provider, Riverpod).
+- Entre muchas cosas mas.
