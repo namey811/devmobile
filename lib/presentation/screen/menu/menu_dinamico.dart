@@ -1,5 +1,6 @@
 import 'package:devmobile/config/menu/menu_items.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class MenuDinamico extends StatelessWidget {
 
@@ -9,14 +10,12 @@ class MenuDinamico extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      key: scaffoldKey,
-      drawer: Drawer(
+    return  Drawer(
         child: Column(
           children: [
             Image.asset("security.png", width: 60, height: 60),
             const Text("Menu Principal"),
-           const SizedBox(height: 15,),
+            const SizedBox(height: 15,),
             ListView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
@@ -28,9 +27,9 @@ class MenuDinamico extends StatelessWidget {
                         title: Text(appMenuItems[index].title),
                         subtitle: Text(appMenuItems[index].subTitle),
                         leading: Icon(appMenuItems[index].icon),
+                        trailing: Icon(Icons.arrow_forward_ios_rounded, color: Colors.amber,),
                         onTap: () {
-                          //print('Índice seleccionado: $index');
-                          Navigator.pushNamed(context, appMenuItems[index].link);
+                          context.push(appMenuItems[index].link);
                           scaffoldKey.currentState?.closeDrawer();
                           
                         },
@@ -44,14 +43,6 @@ class MenuDinamico extends StatelessWidget {
             ),
           ],
         ),
-      ),
-      appBar: AppBar(
-        title: const Text("Unitecnar APP"),
-
-      ),
-      body: const Center(
-        child: Text("BIENVENIDOS A LA APLICACION UNITECNAR!"),
-      ),
     );
   }
 }

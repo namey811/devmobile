@@ -1,4 +1,3 @@
-import 'package:devmobile/config/router/app_router.dart';
 import 'package:devmobile/presentation/screen/cards/cards_screen.dart';
 import 'package:devmobile/presentation/screen/animated/animated_screen.dart';
 import 'package:devmobile/presentation/screen/formularios/form_clientes.dart';
@@ -17,13 +16,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return MaterialApp.router(
-      routerConfig: appRouter,
+    final scaffoldKey = GlobalKey<ScaffoldState>();
+
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Desarrollo Aplicaciones Moviles",
+      title: "Curso Mobile",
       theme: ThemeData(
         primarySwatch: Colors.blue,
-      )
+      ),
+      home: MenuDinamico(scaffoldKey: scaffoldKey,),
+      routes: <String, WidgetBuilder> {
+      '/registerclientes': (BuildContext context) => const FormClientes(),
+      '/login': (BuildContext context) => const LoginScreen(),
+      '/cards': (BuildContext context) => const CardsScreen(),
+      '/animated': (BuildContext context) => const AnimetedScreen(),
+      '/stack': (BuildContext context) => const StackScreen(),
+    },
     );
   }
 }

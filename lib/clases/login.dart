@@ -3,7 +3,7 @@ class Login {
   final String _usuario = "admin"; // Dummy user
   final String _clave = "1234";    // Dummy password
 
-  // Constructor con datos dummies
+  
   Login();
 
   // Método para validar el usuario

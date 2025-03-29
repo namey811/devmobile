@@ -31,16 +31,22 @@ const appMenuItems = <MenuItem>[
   ),
 
   MenuItem(
-    title: 'Perfil', 
-    subTitle: 'Edita tu informacion', 
-    link: '/profile', 
-    icon: Icons.person
+    title: 'Cards', 
+    subTitle: 'Widget Cards', 
+    link: '/cards', 
+    icon: Icons.card_membership_outlined
   ),
     MenuItem(
-    title: 'Cambio de clave', 
-    subTitle: 'Cambio de clave', 
-    link: '/changepassword', 
-    icon: Icons.password_rounded
+    title: 'Animated Container Widget', 
+    subTitle: 'Uso Widget Animated', 
+    link: '/animated', 
+    icon: Icons.elevator_rounded
+  ),
+    MenuItem(
+    title: 'Stack Widget', 
+    subTitle: 'Uso Widget Stack', 
+    link: '/stack', 
+    icon: Icons.stacked_line_chart
   ),
     MenuItem(
     title: 'Configuracion', 
