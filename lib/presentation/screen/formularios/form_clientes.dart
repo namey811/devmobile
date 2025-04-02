@@ -121,10 +121,11 @@ class _FormClientesState extends State<FormClientes> {
   }
 
   void guardarcliente(){
+    /*
    print("Nombre: ${nombre.text}");
    print("Apellido: ${apellido.text}");
    print("Correo: ${email.text}");
    print("Telefono: ${telefono.text}");
- 
+ */
   }
 }

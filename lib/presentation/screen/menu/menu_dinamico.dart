@@ -27,7 +27,7 @@ class MenuDinamico extends StatelessWidget {
                         title: Text(appMenuItems[index].title),
                         subtitle: Text(appMenuItems[index].subTitle),
                         leading: Icon(appMenuItems[index].icon),
-                        trailing: Icon(Icons.arrow_forward_ios_rounded, color: Colors.amber,),
+                        trailing: const Icon(Icons.arrow_forward_ios_rounded, color: Colors.amber,),
                         onTap: () {
                           context.push(appMenuItems[index].link);
                           scaffoldKey.currentState?.closeDrawer();

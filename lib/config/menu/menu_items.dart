@@ -49,12 +49,18 @@ const appMenuItems = <MenuItem>[
     icon: Icons.stacked_line_chart
   ),
     MenuItem(
+    title: 'App tutorial', 
+    subTitle: 'Uso Widget Pageview', 
+    link: '/tutorial', 
+    icon: Icons.turned_in_not_rounded
+  ),
+    MenuItem(
     title: 'Configuracion', 
     subTitle: 'Ajustes generales', 
     link: '/settings', 
     icon: Icons.settings
   ),
-      MenuItem(
+    MenuItem(
     title: 'Salir', 
     subTitle: 'Cerrar sesion en el sistema', 
     link: '/logout', 

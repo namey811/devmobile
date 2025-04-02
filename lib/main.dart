@@ -1,10 +1,4 @@
 import 'package:devmobile/config/router/app_router.dart';
-import 'package:devmobile/presentation/screen/cards/cards_screen.dart';
-import 'package:devmobile/presentation/screen/animated/animated_screen.dart';
-import 'package:devmobile/presentation/screen/formularios/form_clientes.dart';
-import 'package:devmobile/presentation/screen/login/login_screen.dart';
-import 'package:devmobile/presentation/screen/menu/menu_dinamico.dart';
-import 'package:devmobile/presentation/screen/stack/stack_screen.dart';
 import 'package:flutter/material.dart';
 
 void main(){

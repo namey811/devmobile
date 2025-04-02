@@ -1,4 +1,5 @@
 import 'package:devmobile/presentation/screen/animated/animated_screen.dart';
+import 'package:devmobile/presentation/screen/app_tutorial/app_tutorial_screen.dart';
 import 'package:devmobile/presentation/screen/cards/cards_screen.dart';
 import 'package:devmobile/presentation/screen/formularios/form_clientes.dart';
 import 'package:devmobile/presentation/screen/home/home_screen.dart';
@@ -32,6 +33,10 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/stack',
       builder: (context, state) => const StackScreen(),
+    ),
+    GoRoute(
+      path: '/tutorial',
+      builder: (context, state) => const AppTutorialScreen(),
     ),
   ],
 );
