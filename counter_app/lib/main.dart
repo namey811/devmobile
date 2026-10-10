@@ -42,9 +42,6 @@ class _MyAppState extends State<MyApp> {
             FloatingActionButton(
               child: Icon(Icons.plus_one),
               onPressed: (){
-                setState(() {
-                counter++;
-                });
               }
               ),
               SizedBox(height: 20,),
