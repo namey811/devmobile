@@ -1,3 +1,4 @@
+import 'package:counter_app/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -12,8 +13,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
-  int counter = 0;
   
   @override
   Widget build(BuildContext context) {
@@ -23,56 +22,7 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: true,
         colorSchemeSeed: Colors.blue
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('UnitecnarAPP'),
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('$counter', style: TextStyle(fontSize: 160, fontWeight: FontWeight.w100),),
-              Text('Click${counter ==1 ? '': 's'}', style: TextStyle(fontSize: 25),)
-            ],
-          ),
-        ),
-        floatingActionButton: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            FloatingActionButton(
-              child: Icon(Icons.plus_one),
-              onPressed: (){
-                setState(() {
-                counter++;
-                });
-              }
-              ),
-              SizedBox(height: 20,),
-
-              FloatingActionButton(
-                child: Icon(Icons.exposure_minus_1),
-                onPressed: (){
-                  setState(() {
-                    if(counter == 0 ) return;
-                    counter--;
-                  });
-                }
-              ),
-
-              SizedBox(height: 20,),
-              
-              FloatingActionButton(
-                child: Icon(Icons.refresh),
-                onPressed: (){
-                  setState(() {
-                    counter = 0;
-                  });
-                }
-              )
-              
-          ],
-        ),
-      ),
+      home: HomeScreen()
     );
   }
 }
